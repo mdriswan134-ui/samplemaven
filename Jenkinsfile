@@ -2,9 +2,10 @@ pipeline{
     agent any
 
     stages{
-        stage('github')
-        steps{
-            git credentialsId: 'github_app', url: 'https://github.com/mdriswan134-ui/samplemaven.git'
+        stage('github'){
+            steps{
+                git credentialsId: 'github_app', url: 'https://github.com/mdriswan134-ui/samplemaven.git'
+            }
         }
         stage('build'){
             steps{
