@@ -23,7 +23,7 @@ pipeline{
         stage('deploy'){
             steps{
                 echo "Running java program"
-                sh 'java -cp target/classes/App'
+                sh 'java -cp target/classes App'
             }
         }
     }
